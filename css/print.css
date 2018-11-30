@@ -1,0 +1,87 @@
+/* HOW - Print Styles */
+/* Author: Joshua Blauvelt */
+/* Original Date: August 1, 2014 */
+
+/* BASIC ELEMENTS
+------------------------------------------------------------------------------------- */
+body { color:#000; background-color:#fff; }
+
+a:link { color:#000; text-decoration:none; }
+
+img { border:0; }
+
+ul { list-style-type:none; }
+
+
+/* HIDE ITEMS
+------------------------------------------------------------------------------------- */
+button, .btn, #dealership-location { display:none; }
+
+
+/* LAYOUTS
+------------------------------------------------------------------------------------- */
+@page { margin:2cm; } /* page margins, needs to be in cm */
+
+html,body,ul,ol,p { margin:0; padding:0; }
+header, header .wrapper, main, section, aside, footer { width:100% }
+
+h1,h2,h3,h4,h5,h6 { margin:0; page-break-after:avoid; } /* prevent headings from being printed at the bottom of the page */
+h1 { margin:15px 0; text-align:center; }
+
+a[href^=http]:after { content:" (" attr(href)") "; display:block; font-style:italic; text-decoration:underline; } /* displays url for links */
+
+html { }
+body { min-width:1024px; }
+
+.wrapper,header,nav,main,aside,footer { width:100%; height:auto; margin:0 auto; }
+
+.inner { width:1024px; margin:0 auto; }
+
+.coupon { width:98%; margin-bottom:10px; padding:2px 0 0; border:1px dashed #000; height:auto !important; }
+.coupon:last-of-type { margin-bottom:50px; }
+.coupon > div { float:left; position:relative; color:#000; }
+.coupon h2 { margin:0 0 13px 20px; font-size:38px; line-height:42px; }
+.coupon p { margin:0 20px 15px 20px; font-size:14px; line-height:16px; }
+.coupon p small { font-size:11px; line-height:13px; }
+.coupon p span { display:block; margin-top:2px; font-weight:bold; }
+.coupon ul { list-style-type:disc; margin:0 0 15px; padding-left:48px; }
+.coupon li { font-size:14px; line-height:16px; }
+.coupon .call-to-action { display:none; }
+
+.coupon-offer { width:28%; height:auto !important; padding-top:50px; text-align:center; }
+.coupon-details p + ul { margin-top:-10px !important; }
+
+.currency, .percent { font-weight:bold; font-size:50px; line-height:50px;vertical-align:10px; }
+.value { font-weight:bold; font-size:70px; line-height:70px; }
+.savings { font-size:70px; line-height:70px; }
+.caveat { display:block; font-size:12px; line-height:12px; text-align:center; }
+.expiration {  display:block; margin-top:20px; font-size:18px; text-align:center; }
+
+.coupon-details { width:71%; border-left:1px dashed #000; margin:18px 0; }
+.coupon-details h2, .coupon-details p { padding-right:75px; }
+.coupon-details p:last-of-type { margin-bottom:0 !important; }
+
+aside .inner { padding-top:4px; }
+aside .inner > div { float:left; width:33%; }
+aside a { font-size:12px; }
+aside p a:hover { text-decoration:underline; }
+
+#dealership-info { width:309px; margin-left:8px; padding:16px 0 24px; border-right:1px solid #fff; }
+#dealership-info h2 { margin-bottom:12px; font-size:18px; line-height:20px; text-transform:uppercase; }
+#dealership-info p { margin-bottom:18px; line-height:18px; }
+#dealership-info p.address { text-transform:uppercase; }
+#dealership-info p span { color:#000; font-weight:bold; font-size:16px; line-height:18px; }
+#dealership-info ul { margin-bottom:20px; }
+#dealership-info li { margin-bottom:2px; }
+
+#logo-btm { float:right; }
+
+footer p { padding:0 25px; }
+
+/* MISC. CLASSES & IDS
+------------------------------------------------------------------------------------- */
+/* clear floats hack */
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+
+

@@ -1,0 +1,31 @@
+/* Kia Canada Web Fonts */
+
+@font-face {
+ font-family:'kb';
+ src: url('fonts/designkb-webfont.eot');
+ src: url('fonts/designkb-webfont.eot#iefix') format('embedded-opentype'); 
+ src:local("â˜º"), 
+     url('fonts/designkb-webfont.woff') format('woff'),
+     url('fonts/designkb-webfont.ttf') format('truetype'),
+     url('fonts/designkb-webfont.svg') format('svg')
+}
+
+@font-face {
+ font-family:'kl';
+ src: url('fonts/designkl-webfont.eot');
+ src: url('fonts/designkl-webfont.eot#iefix') format('embedded-opentype'); 
+ src:local("â˜º"), 
+     url('fonts/designkl-webfont.woff') format('woff'),
+     url('fonts/designkl-webfont.ttf') format('truetype'),
+     url('fonts/designkl-webfont.svg') format('svg')
+}
+
+@font-face {
+ font-family:'km';
+ src: url('fonts/designkm-webfont.eot');
+ src: url('fonts/designkm-webfont.eot#iefix') format('embedded-opentype'); 
+ src:local("â˜º"), 
+     url('fonts/designkm-webfont.woff') format('woff'),
+     url('fonts/designkm-webfont.ttf') format('truetype'),
+     url('fonts/designkm-webfont.svg') format('svg')
+}

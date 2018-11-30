@@ -1,0 +1,197 @@
+/* 
+	Kia Canada
+	Author: Joshua Blauvelt
+	Original Date: October 21, 2014
+*/
+
+/* BASIC ELEMENTS
+------------------------------------------------------------------------------------- */
+/* reset */
+html,body,div,span,object,iframe,
+h1,h2,h3,h4,h5,h6,p,a,blockquote,pre,
+abbr,address,cite,code,
+del,dfn,em,img,ins,kbd,q,samp,
+small,strong,sub,sup,var,b,i,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+html, body { height:100%; }
+html { overflow-y:scroll; }
+body { color:#000; font:normal 14px/16px 'km', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; text-align:left; background:#fff; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; }
+
+a img,:link img,:visited img { border:0; }
+a,a:link,a:visited,a:hover,a:active { text-decoration:none; color:#fff; font-weight:normal; border:0; }
+a:focus { }
+
+img { width:auto; max-width:100%; height:auto; }
+img:outline { border:none; }
+
+h1 { font-family:'kb'; }
+h2 { }
+h3 { margin-bottom:4px; font:normal 16px/18px 'km'; }
+
+ul { list-style-type:none; }
+
+button:hover { color:#bb162b; cursor:pointer; }
+
+.iOSWhite { color:#fff !important; text-decoration:none !important; }
+
+
+/* HEADER
+------------------------------------------------------------------------------------- */
+header { position:relative; height:199px; min-height:199px; max-height:199px; background-color:#ececec; }
+header h1 { position:absolute; bottom:0; width:100%; background-color:#bb162b; margin:0; padding:0; height:107px; color:#fff; font-size:42px; line-height:107px; text-align:center; vertical-align:middle; }
+header button { float:right; position:relative; top:35px; right:50px; padding:3px 8px; color:#555; font:normal 13px/14px 'km'; background-color:#fff; border:0; }
+header #logo, header #logo-fr { display:block; margin-top:30px; margin-left:24px; }
+
+/* FOOTER
+------------------------------------------------------------------------------------- */
+footer { padding:107px 0 100px; }
+footer .inner { font:normal 10px/13px 'kl'; }
+footer p { padding:0 87px; }
+footer a { color:#000; font-size:10px; line-height:13px; }
+footer a:hover { text-decoration:underline; }
+
+
+/* LAYOUTS
+------------------------------------------------------------------------------------- */
+article,aside,details,figcaption,figure,footer,
+header,hgroup,main,menu,nav,section { display:block; } /* for older browsers */
+
+header,nav,main,aside,footer { width:100%; min-width:1024px; max-width:100%; height:auto; margin:0 auto; }
+
+.inner { width:1024px; margin:0 auto; }
+
+/* coupons */
+.coupon { border:1px solid #9b9c9d; border-bottom:0; }
+.coupon:last-of-type { }
+.coupon > div { float:left; position:relative; }
+.coupon h2 { margin:18px 0 13px 20px; color:#bb162b; font-size:36px; line-height:35px; }
+.coupon p { margin:0 0 25px 20px; }
+.coupon p span { display:block; margin-top:2px; font-weight:bold; }
+.coupon p + ul:not(.call-to-action)  { width:75%; margin-top:-16px !important; margin-bottom:25px; }
+.coupon ul:not(.call-to-action) { list-style-type:disc; margin:0 0 5px; padding-left:48px; }
+.coupon ul:not(.call-to-action) li { margin-bottom:3px; }
+.coupon ul.call-to-action { width:72%; margin-bottom:6px; padding-top:15px; padding-right:0 !important; padding-bottom:8px; border-top:1px solid #898989; }
+.coupon ul.call-to-action li { float:left; }
+.coupon .btn { display:block; height:26px; margin-left:20px; padding:0 14px 0 30px; color:#555; font:normal 14px/26px 'km'; text-transform:uppercase; background:url('http://image.mail.minacsmarketing.com/lib/fe9912727d65017d75/m/1/bg-sprite.png') no-repeat 0 0; }
+.coupon .btn:hover { color:#bb162b; }
+.coupon .btn-coupon-print { background-position:-386px -735px; }
+.coupon .btn-coupon-print:hover { background-position:-552px -735px; }
+
+.coupon-offer { position:relative; width:30%; }
+
+.coupon-offer div { position:relative; top:25%; width:100%; margin:0 auto; text-align:center; }
+.coupon-offer div span { display:block; }
+.coupon-offer .value { font:normal 100px/105px 'kb'; }
+.coupon-offer .caveat { margin-top:5px; font:normal 12px/13px 'kl'; }
+.coupon-offer .expiration { display:block; position:absolute; bottom:26px; left:0; width:100% !important; font:normal 18px/16px 'km'; text-align:center; }
+.coupon-offer sup { vertical-align:44px; font-size:55px !important; line-height:0 !important; }
+.coupon-offer sup.currency { vertical-align:35px !important; }
+
+.coupon-details { width:69%; font:normal 14px/16px 'kl'; border-left:1px solid #898989; }
+.coupon-details p { width:75%; }
+.coupon-details p.disclaimer { width:55%; margin-bottom:16px !important; font:normal 8px/9px 'kl'; }
+
+aside { background:#7e8083; }
+aside .inner { position:relative; }
+aside .inner > div { float:left; }
+aside a:hover { text-decoration:underline; }
+
+#logo-btm { position:absolute; bottom:-34px; right:6%; }
+
+#dealership-logo { width:30%; padding:30px 0 60px; }
+#dealership-logo img { display:block; margin:0 auto; }
+
+#dealership-info { width:47%; margin-left:20px; padding:30px 0 60px; }
+#dealership-info p, #dealership-info a { margin-bottom:18px; color:#fff; font:normal 14px/16px 'km'; }
+#dealership-info a { display:block; margin-top:4px; }
+#dealership-info p.address { text-transform:uppercase; }
+#dealership-info p span.hdr  { color:#000; font:normal 14px/16px 'kb'; }
+#dealership-info ul { margin-bottom:20px; }
+#dealership-info li { margin-bottom:2px; color:#fff; font:normal 14px/16px 'km'; }
+
+#dealership-location { width:20%; margin-left:4px; padding:30px 0 60px; line-height:16px; }
+#dealership-location img { display:block; margin-left:7px; }
+#dealership-location span { display:block; margin-top:6px; margin-left:6px; text-transform:uppercase; }
+#dealership-location span + span { margin-top:0; }
+#dealership-location.french img { padding-left:6px; }
+#dealership-location.french span { padding-left:15px; }
+#dealership-location.french span + span { padding-left:0; }
+#dealership-location a { color:#fff; font:normal 16px/16px 'km'; }
+
+li:last-of-type { margin-right:0 !important; }
+
+
+/* clear floats hack */
+.clearfix:before, .clearfix:after { content:''; display:table; }
+.clearfix:after { clear:both; }
+
+
+/* MEDIA QUERIES
+------------------------------------------------------------------------------------- */
+@media only screen and (max-width:599px) { 
+header,nav,main,aside,footer { width:100%; min-width:100%; max-width:100%; }
+.inner { width:100%; }
+
+header, header h1 { height:auto !important; min-height:100% !important; max-height:100% !important; }
+header h1 { position:relative !important; margin-top:16px; padding:10px 0; font-size:34px; line-height:32px; }
+header h1 .inner { width:98% !important; }
+header #logo, header #logo-fr { margin-top:18px; margin-left:10px; }
+header button { top:30px; right:10px; }
+
+.coupon > div, .coupon ul.call-to-action { float:none; width:100%;  }
+.coupon-offer div { padding-top:50px; }
+.coupon-offer .expiration { top:23px; left:0px; width:auto !important; margin-left:6%; text-align:left;  }
+
+.coupon-details { font-size:16px; line-height:18px; border:0; }
+.coupon-details > * { margin-left:6% !important; margin-right:6% !important; }
+.coupon-details p, .coupon-details p.disclaimer { width:auto; }
+.coupon ul.call-to-action { margin:0 !important; }
+
+.call-to-action { padding:6px 0 !important; }
+.call-to-action li { float:none !important; width:167px; margin:0 auto !important; }
+.coupon .btn { margin-left:0; }
+
+aside .inner > div { float:none; width:100% !important; margin:0 !important; }
+#dealership-logo { padding-bottom:0; }
+
+#dealership-info { padding:25px 0; text-align:center; }
+#dealership-info h3, #dealership-info p span.hdr { font-size:20px; line-height:23px; }
+#dealership-info p, #dealership-info a, #dealership-info li { font-size:18px; line-height:20px; }
+#dealership-info ul { margin:0; }
+
+#dealership-location { padding:0 0 95px; }
+#dealership-location img { margin:0 auto; }
+#dealership-location span { text-align:center; }
+#dealership-location.french img { padding-left:3px; }
+#dealership-location.french span { padding-left:0; }
+footer { padding:90px 0 54px; }
+footer p { padding:0 40px; font-size:14px; line-height:18px; }
+}
+@media only screen and (max-width:375px) { 
+header #logo { margin-left:-7px; }
+header button { right:5px; top:46px; }
+}
+@media only screen and (max-width:414px) { 
+header #logo-fr { margin-left:-5px; }
+}
+@media only screen and (min-width:600px) and (max-width:799px) {
+header,nav,main,aside,footer { min-width:600px; }
+.inner { width:600px; }
+.coupon-offer { width:40%; }
+.coupon-offer .value { font-size:80px; line-height:85px; }
+.coupon-offer sup { vertical-align:40px; font-size:35px !important; line-height:0 !important; }
+.coupon-offer sup.currency { vertical-align:35px !important; }
+.coupon-details { width:59%; }
+#dealership-logo img { width:80%; height:auto; }
+#dealership-location { width:18%; }
+}
+@media only screen and (min-width:800px) and (max-width:1023px) {
+header,nav,main,aside,footer { min-width:800px; }
+.inner { width:800px; }
+}
